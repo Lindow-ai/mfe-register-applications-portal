@@ -1,8 +1,14 @@
-import './styles.css'
+import "./styles.css";
+import { NextUIProvider } from "@nextui-org/react";
+import RoutesNavigation from "./router";
+import { BrowserRouter } from "react-router-dom";
 
 export default function Root(props) {
-  return <section className='background-portal'>
-    <h1>{props.name} is mounted!</h1>
-    <h2>This application allows you to view the various applications available.</h2>
-  </section>;
+  return (
+    <BrowserRouter>
+      <NextUIProvider>
+        <RoutesNavigation />
+      </NextUIProvider>
+    </BrowserRouter>
+  );
 }
