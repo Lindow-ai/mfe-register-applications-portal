@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { routeData } from "../../utils/routeData";
 import { routerType } from "../../interface/router.type";
 import { Container, Card, Row, Text, Col, Grid } from "@nextui-org/react";
-import "./styles/styles.css";
 
 const AppContainer = () => {
   return (
